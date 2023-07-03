@@ -2,10 +2,10 @@ package task1;
 
 public class Main {
 
-    private final static String[] incorrectStr = {"brange", "plum", "tomato", "onibn", "grape"};
+    private final static String[] INCORRECTSTR = {"brange", "plum", "tomato", "onibn", "grape"};
 
     public static void main(String[] args) {
-    printStrArray(correctBtoO(incorrectStr));
+    printStrArray(correctBtoO(INCORRECTSTR));
     }
     private static String[] correctBtoO (String[] array) {
         int length = array.length;
