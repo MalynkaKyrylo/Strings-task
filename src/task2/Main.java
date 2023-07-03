@@ -1,15 +1,15 @@
 package task2;
 
 public class Main {
-    private final static String[] array1 = {"orange", "plum", "tomato", "onion", "grape", "onion"};
+    private final static String[] ARRAY1 = {"orange", "plum", "tomato", "onion", "grape", "onion"};
     private final static String ONION = "onion";
     public static void main(String[] args) {
-        printStrArray(deleteOnion(array1));
+        printStrArray(deleteOnion(ARRAY1));
     }
     private static String[] deleteOnion(String[] array) {
         int countOnion = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == ONION) {
+            if (ONION.equals(array[i])) {
                 countOnion++;
             }
         }
@@ -18,7 +18,7 @@ public class Main {
 
         for (int i = 0, j = 0; i < array.length; i++) {
             if (!ONION.equals(array[i])) {
-                array2[j] = array1[i];
+                array2[j] = array[i];
             j++;
             };
         }
