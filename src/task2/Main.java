@@ -17,7 +17,7 @@ public class Main {
         String[] array2 = new String[length2];
 
         for (int i = 0, j = 0; i < array.length; i++) {
-            if (array[i] != ONION) {
+            if (!ONION.equals(array[i])) {
                 array2[j] = array1[i];
             j++;
             };
