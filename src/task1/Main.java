@@ -7,13 +7,13 @@ public class Main {
     public static void main(String[] args) {
     printStrArray(correctBtoO(incorrectStr));
     }
-    private static String[] correctBtoO (String[] incorrectStr) {
-        int length = incorrectStr.length;
-        String[] correctStr = new String[length];
+    private static String[] correctBtoO (String[] array) {
+        int length = array.length;
+        String[] newArray = new String[length];
         for (int i = 0; i < length; i++) {
-            correctStr[i] = incorrectStr[i].replace("b", "o");
+            newArray[i] = array[i].replace("b", "o");
         }
-        return correctStr;
+        return newArray;
     }
     private static void printStrArray(String[] array) {
         int count = 1;
@@ -21,6 +21,5 @@ public class Main {
             System.out.println(count + ") " + name);
             count++;
         }
-
     }
 }
